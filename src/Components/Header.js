@@ -2,10 +2,19 @@
 export default function Header (){
   return (
     <div className="header">
-      
-      <h1>My Favourite Video Games of all The time , please be aware the main
-        purpose of the website is to practice
-      </h1>
+      <div className="div">
+        <div className="first">
+    <span>(+01)-2345-6789</span> <span>Our location</span>
+    </div>
+    <div className="second">
+    <header>Super Value Deals-Save more coupons</header>
+    </div>
+    <div className="third">
+     <button>Log IN</button>
+    <button>Sign Up</button> 
+    </div>
+      </div>
+     
      
     </div>
     

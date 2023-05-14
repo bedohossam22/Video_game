@@ -1,15 +1,22 @@
 {
   "name": "first-project",
   "version": "0.1.0",
-  "homepage": "https://bedohossam22.github.io/react_project_1",
+  "homepage": "https://github.com/bedohossam22/Ecommerce.git",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-player": "^2.12.0",
+    "react-router-dom": "^6.11.1",
     "react-scripts": "5.0.1",
-    "react-video-js-player": "^1.1.1"
+    "react-video-js-player": "^1.1.1",
+    "swiper": "^9.3.0"
   },
   "scripts": {
     "predeploy": "npm run build",

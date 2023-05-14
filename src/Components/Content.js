@@ -1,6 +1,16 @@
-import { useState } from "react";
+import React, { useState, useEffect } from 'react';
 
 export default function Content(props) {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      console.log(window.pageYOffset);
+      window.pageYOffset > 500 ? setIsScrolled(true) : setIsScrolled(false);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   const item = props.item;
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -21,7 +31,9 @@ export default function Content(props) {
   };
 
   return (
+   
     <div className="Content">
+      
       <h1>{item.name}</h1>
       <div className="media">
         <span className="arrow left" onClick={handleLeftClick}>

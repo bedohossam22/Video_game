@@ -1,24 +1,24 @@
-import React from "react";
-import Header from "./Header";
-import Content from "./Content";
-import Data from "./data";
 import "../style.css/style.css"
-import Nav from "./Nav";
+import React from 'react';
+import Header from "./Header";
+import Interface from "./Interface";
+import Trends from "./Trends";
+import Items from "./Items";
+import Gridlist from "./Gridlist";
+import Offers from "./Offers";
+import Finisher from "./Finisher";
+import Footer from "./Footer";
 export default function App() { 
-  
-const logic = Data.map(item => {
-  return ( 
-    <Content 
-     key = {item.name}
-    item = {item} />
-  )
-})
   return (
-    <div>
- <Nav /> 
-        <Header />
-        
-     {logic} 
-      </div>
-  );
+<div>
+  <Header />   
+  <Interface />
+  <Trends />
+  <Items />
+  <Gridlist />
+  <Offers />
+  <Finisher />
+  <Footer />
+</div>
+  )
 }
